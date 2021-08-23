@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Resume Builder</title>
+
+</head>
+<body>
+    <div class="container">
+    <h1 class="text-center">Resume Builder</h1>
+    <p class="text-center">Let's Build your resume for free!</p>
+    
+    <div class="row">
+
+
+      <div class="col-md-6"> 
+     
+        <h3>Personal Information</h3>
+
+        <div class="form-group">
+            <label for="nameField">Your Name</label>
+             <input 
+             type="text"
+             id="nameField"
+             placeholder="Enter name"
+             class="form-control"
+             />
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="contactField">Your Contact</label>
+             <input 
+             type="text"
+             id="contactField"
+             placeholder="Enter contact "
+             class="form-control"
+             />
+        </div>
+
+        <div class="form-group mt-2">
+            <label for="addField">Your Address</label>
+             <textarea
+             id="addField"
+             placeholder="Enter address"
+             rows="5"
+             class="form-control"></textarea>
+             </div>
+
+             <p class="text-secondary my-3">
+                 Important Links
+             </p>
+
+             <div class="form-group mt-2">
+                <label for="fbField">Facebook</label>
+                 <input 
+                 type="text"
+                 id="fbField"
+                 placeholder="Enter here "
+                 class="form-control"
+                 />
+            </div>
+            <div class="form-group mt-2">
+                <label for="gitField">Github</label>
+                 <input 
+                 type="text"
+                 id="gitField"
+                 placeholder="Enter here "
+                 class="form-control"
+                 />
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="linkedinField">LinkedIn</label>
+                 <input 
+                 type="text"
+                 id="linkedinField"
+                 placeholder="Enter here"
+                 class="form-control"
+                 />
+            </div>
+
+      </div>
+       
+      <div class="col-md-6">
+
+        <h3>Professional Information</h3>
+        
+        <div class="form-group mt-2">
+            <label for="">About</label>
+             <textarea
+             placeholder="Enter here "
+             rows="3"
+             class="form-control">
+             </textarea>
+        </div>
+
+        <div class="form-group mt-2" id="we">
+            <label for="">Work Experience</label>
+             <textarea
+             placeholder="Enter here"
+             rows="3"
+             class="form-control weField">
+             </textarea>
+
+             <div class="container text-center mt-2" id="weAddButton">
+                 <button onclick="addNewWEField()" class="btn btn-primary btn-sm">
+                  Add
+                 </button>
+              </div>
+
+        </div>
+
+        <div class="form-group mt-2" id="aq">
+            <label for="">Academic Qualifications</label>
+             <textarea
+             placeholder="Enter here"
+             rows="3"
+             class="form-control aqField">
+             </textarea>
+
+             <div class="container text-center mt-2" id="aqAddButton">
+                 <button onclick="addNewAQField()" class="btn btn-primary btn-sm">
+                  Add
+                 </button>
+            </div>
+
+        </div>
+      </div>
+     </div>
+
+     <div class="container text-center mt-3">
+      <button class="btn btn-primary btn-lg">
+       Generate Resume
+      </button>
+     </div>
+
+
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+    crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>
