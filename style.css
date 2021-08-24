@@ -3,6 +3,9 @@
 #cv-form {
    margin-bottom: 9rem;
 }
+#cv-template{
+    display: none;
+}
 .myimg {
     border: 1rem solid rgb(255, 255, 255);
     border-radius: 4rem;
@@ -20,3 +23,8 @@
 .card {
     margin-top: 1rem;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

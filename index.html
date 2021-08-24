@@ -96,6 +96,7 @@
         <div class="form-group mt-2">
             <label for="">Objective</label>
              <textarea
+             id="objectiveField"
              placeholder="Enter here "
              rows="3"
              class="form-control">
@@ -137,7 +138,7 @@
      </div>
 
      <div class="container text-center mt-3">
-      <button class="btn btn-primary btn-lg">
+      <button onclick="generateCV()" class="btn btn-primary btn-lg">
        Generate Resume
       </button>
      </div>
@@ -159,14 +160,14 @@
         class="img-fluid myimg">
 
        <div class="container">
-           <p>Payal Bhandwalkar</p>
-           <p>+9920871073, +8785645667</p>
-           <p>Navi mumbai, 410218, India</p>
+           <p id="nameT1">Payal Bhandwalkar</p>
+           <p id="contactT">+9920871073, +8785645667</p>
+           <p id="addressT">Navi mumbai, 410218, India</p>
 
            <hr>
-           <p><a href="https://www.facebook.com/">Facebook</a></p>
-           <p><a href="https://github.com/PayalBhandwalkar">Github</a></p>
-           <p><a href="https://www.linkedin.com/in/payal-bhandwalkar-ab64561b2/">LinkedIn</a></p>
+           <p><a id="fbT" href="https://www.facebook.com/">Facebook</a></p>
+           <p><a id="gitT" href="https://github.com/PayalBhandwalkar">Github</a></p>
+           <p><a id="linkedT" href="https://www.linkedin.com/in/payal-bhandwalkar-ab64561b2/">LinkedIn</a></p>
 
        </div>
 
@@ -174,7 +175,7 @@
       <!---second row-->
     <div class="col-md-8 ">
     
-        <h1 class="text-center">
+        <h1 id="nameT2" class="text-center">
             Payal Bhandwalkar
         </h1>
 
@@ -187,7 +188,7 @@
               </h3>
              </div>
              <div class="card-body">
-                 <p>
+                 <p id="objectiveT">
                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem tenetur omnis atque commodi consequuntur deleniti itaque, est fugiat animi dignissimos corporis sint optio consectetur cum nisi, quam deserunt sequi.
                  </p>
 
@@ -202,18 +203,18 @@
               </h3>
              </div>
              <div class="card-body">
-           <ul>
+           <ul id="weT">
             <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, vero.
+                Lorem ipsum dolor sit amet
             </li>
             <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, vero.
+                Lorem ipsum dolor sit amet
             </li>
             <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, vero.
+                Lorem ipsum dolor sit amet
             </li>
             <li>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, vero.
+                Lorem ipsum dolor sit amet
             </li>
            </ul>
              </div>
@@ -227,7 +228,7 @@
               </h3>
              </div>
              <div class="card-body">
-           <ul>
+           <ul id="aqT">
             <li>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, vero.
             </li>
@@ -245,7 +246,7 @@
         </div>
 
         <div class="container mt-3 text-center">
-            <button class="btn background">
+            <button onclick="printCV()" class="btn background">
              PRINT RESUME
             </button>
         </div>
